@@ -26,11 +26,8 @@ public class LCD {
     }
 
     public void setVolume(int level) {
-        if (level >= 0 && level <= 100) {
             this.volume = level;
-        } else {
-            System.out.println("Volume harus berada dalam rentang 0-100");
-        }
+        
     }
 
     public void volumeUp() {   
@@ -61,11 +58,8 @@ public class LCD {
 
     public void setCable(int index) {
         String[] cables = { "VGA", "DVI", "HDMI", "DisplayPort" };
-        if (index >= 0 && index < cables.length) {
             this.cable = cables[index];
-        } else {
-            System.out.println("Indeks kabel tidak valid");
-        }
+        
     }
 
     public void displayMessage() {
